@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b1a14">
+<title>Vishnuprasath &amp; Sneha – Wedding Invitation</title>
+<meta property="og:title" content="Vishnuprasath & Sneha – Wedding Invitation">
+<meta property="og:description" content="Join us on 13 December 2026 at Brindhavan Auditorium, Coimbatore.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--brown:#3b1a14;--wine:#8a1c2b;--blush:#f6dfd6;--cream:#fbf1e8;--gold:#b98a4a;--ink:#4a2a24}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--blush);color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.2rem;line-height:1.6;text-align:center;overflow-x:hidden}
+body.lock{overflow:hidden}
+.script{font-family:"Great Vibes","Brush Script MT",cursive;font-weight:400}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* ENVELOPE */
+#env{position:fixed;inset:0;z-index:100;background:
+ radial-gradient(circle at 20% 20%,rgba(255,255,255,.05),transparent 40%),
+ repeating-radial-gradient(circle at 50% 50%,#43201a 0 14px,#3b1a14 14px 28px);
+ transition:opacity .9s ease;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#env.gone{opacity:0;pointer-events:none}
+.glow{position:absolute;left:50%;top:44%;width:30px;height:30px;border-radius:50%;transform:translate(-50%,-50%) scale(0);background:radial-gradient(circle,#fff6d6,#f3b95a 40%,transparent 70%);opacity:0}
+.flap{position:absolute;top:0;left:0;right:0;height:58%;transform-origin:top;transition:transform 1.1s cubic-bezier(.6,0,.3,1);z-index:2}
+.flap i{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 100%);background:linear-gradient(#4a231b,#33150f)}
+.flap i+i{clip-path:polygon(0 0,100% 0,50% 100%,50% 99%);background:none}
+.flap svg{position:absolute;inset:0;width:100%;height:100%}
+.pocket{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,transparent 49.8%,rgba(185,138,74,.5) 50%,transparent 50.4%),linear-gradient(225deg,transparent 49.8%,rgba(185,138,74,.5) 50%,transparent 50.4%)}
+.seal{position:absolute;left:50%;top:58%;z-index:3;width:112px;height:112px;margin:-56px 0 0 -56px;border-radius:50%;border:0;
+ background:radial-gradient(circle at 35% 30%,#fff3e4,#ecd3b8 60%,#d5b48f);color:#7a3a2a;font-size:2.3rem;box-shadow:0 6px 20px rgba(0,0,0,.5),inset 0 0 0 6px rgba(185,138,74,.35);animation:pulse 2.4s infinite;transition:transform .6s,opacity .6s}
+@keyframes pulse{50%{box-shadow:0 6px 20px rgba(0,0,0,.5),0 0 0 16px rgba(243,185,90,.12)}}
+.eh{position:absolute;bottom:12%;left:0;right:0;z-index:3;color:#e9d1b0;font-style:italic;letter-spacing:.05em}
+.eh.top{top:9%;bottom:auto;font-size:1.1rem}
+#env.open .seal{transform:scale(1.6);opacity:0;animation:none}
+#env.open .eh{opacity:0;transition:opacity .4s}
+#env.open .flap{transform:rotateX(180deg)}
+#env.open .glow{opacity:1;transform:translate(-50%,-50%) scale(30);transition:transform 1.6s ease-in .5s,opacity .3s .4s}
+
+/* NAV */
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--wine);z-index:40}
+nav{position:fixed;bottom:max(10px,env(safe-area-inset-bottom));left:50%;transform:translate(-50%,120px);z-index:30;display:flex;gap:.2rem;background:rgba(59,26,20,.92);backdrop-filter:blur(8px);padding:.35rem .5rem;border-radius:999px;transition:transform .7s .3s}
+nav.show{transform:translateX(-50%)}
+nav a{color:#f1dfc8;text-decoration:none;font-size:.95rem;padding:.35rem .8rem;border-radius:999px;transition:.3s}
+nav a.on{background:var(--gold);color:#2b120d}
+
+/* SECTIONS */
+main{opacity:0;transition:opacity 1s}
+main.show{opacity:1}
+section{max-width:560px;margin:0 auto;padding:4.5rem 1.5rem}
+.hero{min-height:100svh;padding-top:2.5rem;display:flex;align-items:center;justify-content:center}
+.arch{width:100%;border:1.5px solid var(--gold);border-radius:999px 999px 14px 14px;padding:4.5rem 1.2rem 3rem;background:linear-gradient(#fdf3ec,#f4d8cd);position:relative;box-shadow:0 0 0 7px var(--blush),0 0 0 8px rgba(185,138,74,.5)}
+.eyebrow{letter-spacing:.3em;font-size:.9rem;text-transform:uppercase;color:var(--gold);margin:0}
+h1{margin:.4rem 0;color:var(--wine);font-size:clamp(3.4rem,17vw,5.4rem);line-height:1.02}
+h1 span{display:block;font-size:2.2rem;color:var(--gold)}
+.sub{margin:1rem 0 0}
+h2{font-size:2.6rem;color:var(--wine);margin:0 0 1.2rem;font-weight:400}
+.cd{display:flex;justify-content:center;gap:.6rem;margin-top:1.2rem}
+.cd div{min-width:68px;padding:.6rem .2rem;border:1px solid var(--gold);border-radius:10px;background:var(--cream)}
+.cd b{display:block;font-size:2rem;line-height:1.1;color:var(--wine)}
+.cd span{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}
+.rose{display:inline-block;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#c0364a,#7b1424);box-shadow:0 0 0 4px rgba(138,28,43,.15)}
+.names .nm{font-size:2.5rem;color:var(--wine);line-height:1.2;margin-top:1rem}
+.names p{margin:.2rem 0}.small{font-size:.95rem;opacity:.75}
+
+/* timeline */
+.tl{position:relative;text-align:left;padding:0 0 0 0;margin:2rem 0 0}
+.tl:before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:1.5px dashed var(--gold)}
+.ev{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:center;margin-bottom:2.2rem}
+.ev .rose{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+.ev .t{text-align:right;padding-right:1.8rem;font-size:1.3rem}
+.ev .d{padding-left:1.8rem}
+.ev .d b{display:block;font-size:1.5rem;color:var(--wine);line-height:1.2}
+.ev.alt .t{order:2;text-align:left;padding:0 0 0 1.8rem}.ev.alt .d{order:1;text-align:right;padding:0 1.8rem 0 0}
+
+.btn{display:inline-block;margin:.3rem;padding:.7rem 1.7rem;background:var(--wine);color:#fff3ea;text-decoration:none;border:0;border-radius:999px;font-size:1.1rem;transition:transform .2s}
+.btn:active{transform:scale(.95)}
+.btn.alt{background:none;border:1px solid var(--wine);color:var(--wine)}
+footer{padding:2rem 1.5rem 6.5rem;font-style:italic;border-top:1px solid rgba(185,138,74,.4)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(36px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+
+.petal{position:fixed;top:-20px;z-index:150;width:12px;height:16px;border-radius:50% 0 50% 0;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.seal{animation:none}}
+
+section{position:relative}
+.venue-img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;margin:1.2rem 0 .6rem;border:1.5px solid var(--gold);border-radius:14px;box-shadow:0 8px 22px rgba(90,30,30,.15);background:var(--cream)}
+</style>
+</head>
+<body class="lock">
+
+<div id="env">
+  <div class="glow"></div>
+  <div class="pocket"></div>
+  <div class="flap"><i></i></div>
+  <p class="eh top">You are invited</p>
+  <button class="seal script" id="seal" aria-label="Open invitation">V&amp;S</button>
+  <p class="eh">Tap the seal to open</p>
+</div>
+
+<div id="bar"></div>
+<nav id="nav" aria-label="Sections">
+  <a href="#home">Home</a><a href="#events">Events</a><a href="#venue">Venue</a><a href="#rsvp">RSVP</a>
+</nav>
+
+<main id="main">
+<section class="hero" id="home" data-s>
+  <div class="arch">
+    <p class="eyebrow rv">Wedding Day</p>
+    <p class="rv" style="margin:.2rem 0;color:var(--gold);letter-spacing:.2em">13 · 12 · 26</p>
+    <h1 class="script rv" style="transition-delay:.15s">Vishnuprasath<span>&amp;</span>Sneha</h1>
+    <p class="sub rv" style="transition-delay:.3s">Request the pleasure of your company</p>
+    <div class="cd rv" id="cd" style="transition-delay:.45s" aria-label="Countdown"></div>
+  </div>
+</section>
+
+<section class="names" data-s>
+  <span class="rose rv"></span>
+  <p class="rv" style="margin-top:1rem">Sri K. Balasubramaniam &amp; Smt. A. Mohana<br><i>and</i><br>Sri S. Elangovan &amp; Smt. E. Thenmozhi</p>
+  <p class="rv">cordially solicit your gracious presence with family and friends on the auspicious occasion of the wedding of their children</p>
+  <div class="nm script rv">B. Vishnuprasath</div><p class="small rv">B.Pharm.</p>
+  <p class="rv script" style="font-size:2rem;color:var(--gold)">weds</p>
+  <div class="nm script rv">E. Sneha</div><p class="small rv">B.Com (CS), MIB.</p>
+</section>
+
+<section id="events" data-s>
+  <h2 class="script rv">Schedule of Events</h2>
+  <div class="tl">
+    <div class="ev rv"><div class="t">Sat, 12 Dec<br>6:00 – 9:00 pm</div><span class="rose"></span><div class="d"><b>Reception</b>An evening of celebration</div></div>
+    <div class="ev alt rv"><div class="t">Sun, 13 Dec<br>7:45 – 8:45 am</div><span class="rose"></span><div class="d"><b>Wedding</b>The auspicious muhurtham</div></div>
+  </div>
+</section>
+
+<section id="venue" data-s>
+  <h2 class="script rv">Location</h2>
+  <p class="rv"><strong>Brindhavan Auditorium</strong><br>Avinashi Road, Chinniyampalayam,<br>Coimbatore – 641 048</p>
+  <img class="venue-img rv" loading="lazy" alt="Brindhavan Auditorium" onerror="this.style.display='none'" src="venue.jpg">
+  <a class="btn rv" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Brindhavan+Auditorium+Chinniyampalayam+Coimbatore">Get directions</a>
+</section>
+
+<section id="rsvp" data-s>
+  <h2 class="script rv">Confirm Your Attendance</h2>
+  <p class="rv">To help us prepare for a joyful celebration, kindly let us know if you can join us.</p>
+</section>
+
+<footer>With best compliments from<br>Friends &amp; Relatives</footer>
+</main>
+
+
+<script>
+// ====== EDIT THESE ======
+var WEDDING_TIME = "2026-12-13T07:45:00+05:30";
+// ========================
+(function(){
+  var $=function(s){return document.querySelector(s)}, body=document.body;
+  function petals(n){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+    for(var i=0;i<n;i++){var p=document.createElement("span");p.className="petal";p.style.left=Math.random()*100+"vw";
+      p.style.background=["#c0364a","#e9b44c","#8a1c2b"][i%3];p.style.animationDuration=(3+Math.random()*3)+"s";p.style.animationDelay=Math.random()*1.2+"s";
+      body.appendChild(p);setTimeout(function(x){x.remove()},7500,p)}}
+  // open envelope
+  $("#seal").onclick=function(){
+    $("#env").classList.add("open");
+    setTimeout(function(){$("#env").classList.add("gone");$("#main").classList.add("show");$("#nav").classList.add("show");body.classList.remove("lock");petals(18)},2000);
+    setTimeout(function(){$("#env").style.display="none"},3000)};
+  // reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+  // nav highlight + progress
+  var links=document.querySelectorAll("nav a");
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.target.id){links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})}})},{threshold:.45});
+  document.querySelectorAll("[data-s]").forEach(function(s){so.observe(s)});
+  addEventListener("scroll",function(){var h=document.documentElement;$("#bar").style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%"},{passive:true});
+  // countdown
+  var t=new Date(WEDDING_TIME).getTime(),cd=$("#cd");
+  function tick(){var d=t-Date.now();if(d<=0){cd.innerHTML="<span class='script' style='font-size:2rem'>Today is the day</span>";return}
+    var v=[["Days",Math.floor(d/864e5)],["Hours",Math.floor(d%864e5/36e5)],["Mins",Math.floor(d%36e5/6e4)],["Secs",Math.floor(d%6e4/1e3)]];
+    cd.innerHTML=v.map(function(x){return"<div><b>"+x[1]+"</b><span>"+x[0]+"</span></div>"}).join("")}
+  tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
